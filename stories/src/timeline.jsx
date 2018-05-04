@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/timeline.sass'
 
 const data = [{
   date: '77/11/15',
