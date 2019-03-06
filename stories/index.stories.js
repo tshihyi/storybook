@@ -8,7 +8,10 @@ import { Timeline } from './src/fws/timeline.jsx'
 import { Register } from './src/fws/register.jsx'
 import { News } from './src/fws/news.jsx'
 import { CaseRegister } from './src/fidr/case-register.jsx'
+import { Resume } from './src/resume/resume.jsx'
 
+storiesOf("履歷", module)
+  .add("覆歷簡表", () => <Resume />)
 storiesOf("107FWS", module)
   .add("農審辦法", () => <Timeline />)
   .add("註冊", () => <Register />)
