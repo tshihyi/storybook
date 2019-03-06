@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/register.sass'
+import '../../css/register.sass'
 
 const test = () =>
 <div class="wrapper fadeInDown">
@@ -7,7 +7,6 @@ const test = () =>
   <h2 class="active"><a href="#"> 登入 </a></h2>
   <h2 class="active"><a href="#"> 註冊 </a></h2>
   <div class="fadeIn first">
-    <img src='./img/tree.png' id="icon" alt="system logo" />
   </div>
   <div>
     <form>
