@@ -9,6 +9,8 @@ import { Register } from './src/fws/register.jsx'
 import { News } from './src/fws/news.jsx'
 import { CaseRegister } from './src/fidr/case-register.jsx'
 import { Resume } from './src/resume/resume.jsx'
+import { IDList } from './src/openfile/idlist.jsx'
+
 
 storiesOf("履歷", module)
   .add("覆歷簡表", () => <Resume />)
@@ -17,5 +19,6 @@ storiesOf("107FWS", module)
   .add("註冊", () => <Register />)
 storiesOf("108FWS", module)
   .add("最新公告", () => <News />)
+  .add("檔案處理", () => <IDList />)
 storiesOf("107FIDR", module)
   .add("案件登錄", () => <CaseRegister />)
