@@ -3,6 +3,7 @@ coverage
 .nyc_output
 dist
 storybook-static
+.netlify
 lib
 bin
 *.tgz
