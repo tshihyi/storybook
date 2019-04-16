@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/resume.sass'
+import '../../css/documents.sass'
 
 const data = [{
   name: '使用者案例',
@@ -35,19 +35,7 @@ const test = () =>
     <div>
       {data.map(({name, items}) =>
         <div key={name}>
-          <div className="cv-title">{name}</div>
-            {items.map(({item, link}) =>
-            <div className="work-item" key={link}>
-              <li><a target="_blank" href={link}>{item}</a></li>
-            </div>
-            )}
-        </div>
-      )}
-    </div>
-    <div>
-      {data.map(({name, items}) =>
-        <div key={name}>
-          <div className="cv-title">{name}</div>
+          <div className="doc-title">{name}</div>
             {items.map(({item, link}) =>
             <div className="work-item" key={link}>
               <li><a target="_blank" href={link}>{item}</a></li>

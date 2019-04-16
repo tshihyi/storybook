@@ -168,10 +168,10 @@ const EventDetail = ({values}) =>
 </div>
 
 const test = () =>
-  <div id="top" className="topic">
-  <a target="_blank" href="http://bit.ly/2H2CZrk">{topic[0].topic}</a>
-    <div className="timeline">
-      {data.map((values, index) =>
+  <div id="top" className="timeline topic">
+    <a target="_blank" href="http://bit.ly/2H2CZrk">{topic[0].topic}</a>
+    <div className="timeline-container">
+      {data.map(values =>
         <div className="event active">
           <div className="line"></div>
           <div className="item"></div>

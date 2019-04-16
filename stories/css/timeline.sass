@@ -1,110 +1,113 @@
-
-.gotop
-  background: #555
-  left: 8%
-  bottom: 3%
-  width: 30px
-  height: 30px
-  text-align: center
-  border-radius: 50%
-  margin-top: -1.5rem
-  &:hover
-    background: #999
-    color: #360
-    opacity: 0.8
-  > a
-  position: fixed
-  font-size: 1.3rem
-
-a
-  text-decoration: none
-  color: #eee
-  transition: color 5s ease
-  &:hover
-    color: #360
-
 .timeline
-  margin-top: 1rem
-  margin-left: 50%
-
-.topic
-  margin-top: 1.5rem
   font-size: 1.5rem
-  height: 5rem
   font-family: 'Microsoft JhengHei'
-
-.date
-  font-size: 1.3rem
-  padding: 0.5rem
-  width: 5rem
-  margin-left: 2rem
-  margin-right: 2rem
-
-.title
-  font-size: 0.9rem
-
-.ref
-  font-size: 0.7rem
-  font-style: italic
-  white-space: pre-line
-  margin: 0.8rem 0 0.8rem 0
-
-.content
-  font-size: 0.8rem
-  white-space: pre-line
-  overflow: hidden
-  max-height: 100%
-  transition: max-height 0.5s ease
+  padding: 1rem 2rem 3rem 1.5rem
+  background: #222
   color: #fff
 
-.item
-  background: #360
-  border-radius: 50%
-  width: 1rem
-  height: 1rem
-  position: absolute
-  margin-top: 1.6rem
 
-.box
-  background: #333
-  opacity: 0.9
-  border-radius: 5px
-  padding: 1.5rem
-  margin-left: 1.8rem
-  display: block
-  cursor: pointer
+  .gotop
+    background: #555
+    left: 8%
+    bottom: 3%
+    width: 30px
+    height: 30px
+    text-align: center
+    border-radius: 50%
+    margin-top: -1.5rem
+    &:hover
+      background: #999
+      color: #360
+      opacity: 0.8
+    > a
+    position: fixed
+    font-size: 1.3rem
 
-$transition-time: 3s
+  a
+    text-decoration: none
+    color: #eee
+    transition: color 5s ease
+    &:hover
+      color: #360
 
-.event
-  position: relative
-  transition: color 0.2s ease
-  &:hover
-    color: #090
-  .detail
-    transition: transform $transition-time ease
-    transform-origin: left
-    .date, .box
+  .timeline-container
+    margin-top: 1rem
+    margin-left: 50%
+
+  .date
+    font-size: 1.3rem
+    padding: 0.5rem
+    width: 5rem
+    margin-left: 2rem
+    margin-right: 2rem
+
+  .title
+    font-size: 0.9rem
+
+  .ref
+    font-size: 0.7rem
+    font-style: italic
+    white-space: pre-line
+    margin: 0.8rem 0 0.8rem 0
+
+  .content
+    font-size: 0.8rem
+    white-space: pre-line
+    overflow: hidden
+    max-height: 100%
+    transition: max-height 0.5s ease
+    color: #fff
+    margin-bottom: 0.2rem
+
+  .item
+    background: #360
+    border-radius: 50%
+    width: 1rem
+    height: 1rem
+    position: absolute
+    margin-top: 1.6rem
+
+  .box
+    background: #333
+    opacity: 0.9
+    border-radius: 5px
+    padding: 1.5rem
+    margin-left: 1.8rem
+    display: block
+    cursor: pointer
+
+  $transition-time: 3s
+
+  .event
+    position: relative
+    transition: color 0.2s ease
+    &:hover
+      color: #090
+    .detail
       transition: transform $transition-time ease
+      transform-origin: left
+      .date, .box
+        transition: transform $transition-time ease
 
-.event:hover
-  .detail, .date
-    transform: rotate3d(0, 1, 0, 0.5turn)
-    margin-left: 0.8rem
-    .date, .box
-      transform: rotate3d(0, 1, 0, -0.5turn)
+  .event:hover
+    .detail, .date
+      transform: rotate3d(0, 1, 0, 0.5turn)
+      margin-left: 0.8rem
+      .date, .box
+        transform: rotate3d(0, 1, 0, -0.5turn)
 
-.line
-  background: #360
-  position: absolute
-  margin-left: 0.4rem
-  margin-top: 1.6rem
-  height: 100%
-  width: 3px
+  .line
+    background: #360
+    position: absolute
+    margin-left: 0.4rem
+    margin-top: 1.6rem
+    padding-bottom: 2rem
+    height: 100%
+    width: 3px
 
-input
-  display: none
+  input
+    display: none
 
-.box
-  input:not(:checked) ~ .content
-    max-height: 0rem
+  .box
+    input:not(:checked) ~ .content
+      max-height: 0rem
