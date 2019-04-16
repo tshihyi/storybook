@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactModal from 'react-modal'
 import { configureAction } from '@storybook/addon-actions'
-import { storiesOf } from '@storybook/react'
+import { storiesOf, addParameters } from '@storybook/react'
 import { action } from '@storybook/addon-actions/register';
 import { link } from '@storybook/addon-links/register';
 import { Timeline } from './src/fws/timeline.jsx'
@@ -10,7 +10,6 @@ import { News } from './src/fws/news.jsx'
 import { Resume } from './src/resume/resume.jsx'
 import { Documents } from './src/works/documents.jsx'
 import { IDList } from './src/openfile/idlist.jsx'
-
 
 storiesOf("工作簡歷", module)
   .add("履歷簡表", () => <Resume />)
