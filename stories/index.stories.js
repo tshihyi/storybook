@@ -8,15 +8,16 @@ import { Timeline } from './src/fws/timeline.jsx'
 import { Register } from './src/fws/register.jsx'
 import { News } from './src/fws/news.jsx'
 import { Resume } from './src/resume/resume.jsx'
-import { Documents } from './src/works/documents.jsx'
 import { IDList } from './src/openfile/idlist.jsx'
+import { Documents } from './src/works/documents.jsx'
+import { Prototypes } from './src/works/prototypes.jsx'
 
 storiesOf("工作簡歷", module)
   .add("履歷簡表", () => <Resume />)
 storiesOf("SA系統分析/分析文件", module)
   .add("系統分析文件", ()=><Documents />)
 storiesOf("SA系統分析/系統雛型", module)
-  .add("系統雛型彙整", ()=><Documents />)
+  .add("系統雛型彙整", ()=><Prototypes />)
 storiesOf("PM專案管理", module)
   .add("WBS切割", ()=><Documents />)
   .add("服務建議書", ()=><Documents />)
