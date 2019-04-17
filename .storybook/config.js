@@ -6,6 +6,7 @@ addParameters({
      * show story component as full screen
      * @type {Boolean}
      */
+    name: '杜詩怡工作作品集',
     isFullScreen: true,
     /**
      * display panel that shows a list of stories
