@@ -6,10 +6,6 @@ import imageFileUC7 from '../../img/07-fidr-meeting.png'
 import imageFileUC10 from '../../img/10-education-sys-operation.png'
 import imageFileUC11 from '../../img/11-e2e-automatic-testing.png'
 
-
-
-
-
 const data = [{
   name: '使用者個案文件',
   items: [{
@@ -22,7 +18,7 @@ const data = [{
       item: '2-1-爭審-案件資料',
       link: 'https://drive.google.com/file/d/1wNyg6lT426ObSSoeSqjlh5QcAiUx9b0c/view?usp=sharing'
     }, {
-      item: '2-1-爭審-會議議程管理',
+      item: '2-2-爭審-會議議程管理',
       link: 'https://drive.google.com/open?id=1i5awxGkXzzwkpIm3z9T2LtmX2Ro3-i5E'
     }],
 }, {
@@ -64,7 +60,7 @@ const test = () =>
       <div>
         <a href="https://drive.google.com/open?id=1i5awxGkXzzwkpIm3z9T2LtmX2Ro3-i5E" target="_blank">
           <img src={imageFileUC7} />
-          <div className="docs-sub-titles">2-1-爭審-會議議程管理</div>
+          <div className="docs-sub-titles">2-2-爭審-會議議程管理</div>
         </a>
       </div>
     </div>
