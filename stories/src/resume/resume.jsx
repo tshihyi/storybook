@@ -105,7 +105,6 @@ const test = () =>
         <li>喜歡從工作中發現問題並解決問題</li>
       </div>
     </div>
-
   </div>
 
 export { test as Resume }
