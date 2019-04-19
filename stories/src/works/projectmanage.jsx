@@ -6,7 +6,7 @@ import imgTFS from '../../img/23-tfs.png'
 import imgWorkStatistics from '../../img/24-iteration-work-statistics.png'
 
 const boards = [{
-  item: '1-Trello工作管理看板',
+  item: '1-Trello工作管理看板(Demo)',
   link: 'https://trello.com/b/3cgMbtzq',
   image: imgTrello
 }, {
@@ -18,7 +18,7 @@ const boards = [{
   link: 'https://drive.google.com/open?id=1hTL814tuFbxpZPuvKKhV5ciRmrYHYsdA',
   image: imgTFS
 }, {
-  item: '4-Iteration工作量統計',
+  item: '4-Iteration工作量(週)統計',
   link: 'https://drive.google.com/open?id=1WKGcvcFcNqXdMWa9oq3obnt1C6SUzFG2',
   image: imgWorkStatistics
 }]
