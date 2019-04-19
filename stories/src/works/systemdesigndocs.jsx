@@ -1,74 +1,44 @@
 import React from 'react'
-import '../../css/documents.sass'
-import imgFwsOAIInsure from '../../img/04-fws-oai-insure.png'
-import imgFwsDataCompare from '../../img/05-fws-data-compare.png'
-import imgFIDRCase from '../../img/06-fidr-case.png'
-import imgFIDRMeeting from '../../img/07-fidr-meeting.png'
-import imgEducationPPT from '../../img/10-education-sys-operation.png'
-import imgE2ETestingPPT from '../../img/11-e2e-automatic-testing.png'
-import imgAppFunctionPPT from '../../img/12-member-app.png'
-import imgAppAnalyzePPT from '../../img/13-member-product-analyze.png'
-
-const specs = [{
-  item: '1-1-福利-職保批次投保',
-  link: 'https://drive.google.com/open?id=1zdKKn-0g2Y1jVDF0h6REtS9Hke6NbFW9',
-  image: imgFwsOAIInsure
-}, {
-  item: '1-2-福利-資料比對',
-  link: 'https://drive.google.com/open?id=13FQscxZLIwAFWaTJ0XMbqZOinKjK-jn1',
-  image: imgFwsDataCompare
-}, {
-  item: '2-1-爭審-案件資料',
-  link: 'https://drive.google.com/file/d/1wNyg6lT426ObSSoeSqjlh5QcAiUx9b0c/view?usp=sharing',
-  image: imgFIDRCase
-}, {
-  item: '2-2-爭審-會議議程管理',
-  link: 'https://drive.google.com/open?id=1i5awxGkXzzwkpIm3z9T2LtmX2Ro3-i5E',
-  image: imgFIDRMeeting
-}]
-
-const ppts =  [{
-  item: '1-1-App-產品功能介紹',
-  link: 'https://drive.google.com/open?id=13gsullBIDAzyPRVWidosCju8P3UuqDF0',
-  image: imgAppFunctionPPT
-}, {
-  item: '1-2-App-競品分析簡報',
-  link: 'https://drive.google.com/open?id=1qlhx4x_BsN6bdNPmzWLmkoySO4NM6XhM',
-  image: imgAppAnalyzePPT
-}, {
-  item: '1-3-福利-保費功能教育訓練',
-  link: 'https://drive.google.com/file/d/1wNyg6lT426ObSSoeSqjlh5QcAiUx9b0c/view?usp=sharing',
-  image: imgEducationPPT
-}, {
-  item: '1-4-福利-E2E自動化測試簡介',
-  link: 'https://drive.google.com/open?id=12Apoeaclz3aqzukL8d1r4wAnAVmq7PYc',
-  image: imgE2ETestingPPT
-}]
+import '../../css/systemdesigndocs.sass'
+import imgFishAPI from '../../img/14-fish-api.png'
+import imgFwsAPI from '../../img/15-fws-api.png'
+import imgActivityDiagram from '../../img/16-activity-digram.png'
+import imgUseCaseDiagram from '../../img/17-fws-use-case-diagram.png'
+import imgActualFarmerUCDiagram from '../../img/18-actualfarmer-usecase-diagram.png'
+import imgEERModel from '../../img/19-db-eer-model.png'
+import imgSystemFlowChart from '../../img/20-system-flow-diagram.png'
 
 const data = [{
-  name: '使用者個案文件',
-  items: specs,
+  item: '1-APP產品API文件',
+  link: 'https://drive.google.com/open?id=1WJqVqLtfCqOwCi0J1O5gCNwXjRWAmdye',
+  image: imgFishAPI
 }, {
-  name: '教育訓練文件',
-  items: ppts
+  item: '2-功能活動圖',
+  link: 'https://drive.google.com/open?id=1jeb6SAGDxaX0GHCxegoUc94tSjnDvDdy',
+  image: imgActivityDiagram
+}, {
+  item: '3-使用者案例圖',
+  link: 'https://drive.google.com/open?id=1U71aOl_0bqLXiotCUzFdtit0Nx-XbvZc',
+  image: imgUseCaseDiagram
+}, {
+  item: '4-多人使用者案例圖',
+  link: 'https://drive.google.com/open?id=1F10b87hAe-TumCQL7fYg5-or1AjIrOju',
+  image: imgActualFarmerUCDiagram
+}, {
+  item: '5-資料庫資料表關聯圖',
+  link: 'https://drive.google.com/open?id=1z3JgY1Ipt5WLg3VpF9nRIbHY4-LkrYAv',
+  image: imgEERModel
+}, {
+  item: '6-系統功能流程圖',
+  link: 'https://drive.google.com/open?id=1YBhJwN2SmstCMWMZ99GMOwq3tfOd5nzO',
+  image: imgSystemFlowChart
 }]
 
 const test = () =>
   <div className="documents">
-    <div className="docs-titles">使用者個案文件</div>
+    <div className="docs-titles">API及DB相關文件</div>
     <div className=" docs-layout">
-    {specs.map(({item, link, image}) =>
-      <div>
-        <a href={link} target="_blank">
-          <img src={image} />
-          <div className="docs-sub-titles">{item}</div>
-        </a>
-      </div>
-    )}
-    </div>
-    <div className="docs-titles">投影片簡報文件</div>
-    <div className="docs-layout ">
-    {ppts.map(({item, link,image}) =>
+    {data.map(({item, link, image}) =>
       <div>
         <a href={link} target="_blank">
           <img src={image} />
