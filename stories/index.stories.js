@@ -11,11 +11,14 @@ import { Resume } from './src/resume/resume.jsx'
 import { IDList } from './src/openfile/idlist.jsx'
 import { Documents } from './src/works/documents.jsx'
 import { Prototypes } from './src/works/prototypes.jsx'
+import { SystemDesignDocs } from './src/works/systemdesigndocs.jsx'
 
 storiesOf("工作簡歷", module)
   .add("履歷簡表", () => <Resume />)
-storiesOf("SA系統分析/分析文件", module)
+storiesOf("SA系統分析/系統分析文件", module)
   .add("系統分析文件", ()=><Documents />)
+storiesOf("SA系統分析/系統設計文件", module)
+  .add("系統設計文件", ()=><SystemDesignDocs />)
 storiesOf("SA系統分析/系統雛型", module)
   .add("系統雛型彙整", ()=><Prototypes />)
 storiesOf("PM專案管理", module)
