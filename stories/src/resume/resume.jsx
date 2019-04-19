@@ -91,7 +91,7 @@ const test = () =>
         <div>2005/09 - 2007/06</div>
         <div className="work-description">國立高雄師範大學 資訊教育研究所</div>
         <div>2001/09 - 2005/06</div>
-        <div className="work-description">國立屏東科技大學 資訊管理系</div>
+        <div className="work-description">國立屏東科技大學 資訊管理系(第二名畢業)</div>
       </div>
       <div className="cv-title-right">其他證照</div>
       <div className="work-item">
