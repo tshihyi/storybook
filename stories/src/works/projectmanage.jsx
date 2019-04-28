@@ -4,6 +4,11 @@ import imgTrello from '../../img/21-trello.png'
 import imgAsana from '../../img/22-asana-workboard.png'
 import imgTFS from '../../img/23-tfs.png'
 import imgWorkStatistics from '../../img/24-iteration-work-statistics.png'
+import imgWBS from '../../img/25-wbs.png'
+import imgProjectMaintain from '../../img/26-project-maintain.png'
+import imgPersonDays from '../../img/27-persondays.png'
+import imgUserStory from '../../img/28-userstory.png'
+
 
 const boards = [{
   item: '1-Trello工作管理看板(Demo)',
@@ -25,16 +30,20 @@ const boards = [{
 
 const docs =  [{
   item: '1-專案WBS',
-  link: '',
-  image: imgTrello
+  link: 'https://drive.google.com/open?id=1SPoMckPvVrKr-aqZRW68Qg2-aXaK5P0E',
+  image: imgWBS
 }, {
-  item: '2-專案控制表',
-  link: '',
-  image: imgTrello
+  item: '2-專案維護表',
+  link: 'https://drive.google.com/open?id=1u10pwk7KkPzO51c8ekCUuqrPG98woTGS',
+  image: imgProjectMaintain
 }, {
   item: '3-成本分析表',
-  link: '',
-  image: imgTrello
+  link: 'https://drive.google.com/open?id=1F8KF2-aqWbOWDmTxPaK5J-m2vUZEKMnQ',
+  image: imgPersonDays
+}, {
+  item: '4-使用者故事',
+  link: 'https://drive.google.com/open?id=1iYnrYbAjcxEhjZQ3QgJzGlLgaTf6oh5q',
+  image: imgUserStory
 }]
 
 const data = [{

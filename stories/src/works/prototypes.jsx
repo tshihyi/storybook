@@ -4,7 +4,7 @@ import imageFiles3 from '../../img/01-protoype-fws.png'
 import imageFiles2 from '../../img/02-prototype-fidr.png'
 import imageFiles1 from '../../img/03-prototype-facility.png'
 
-const test = () =>
+const Prototypes = () =>
   <div className="prototypes">
     <div className="prototypes thumbnail-container">
     <div className="prototypes thumbnail-img">
@@ -24,4 +24,5 @@ const test = () =>
       </div>
     </div>
   </div>
-export { test as Prototypes }
+
+export default Prototypes
