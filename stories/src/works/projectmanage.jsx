@@ -54,7 +54,7 @@ const data = [{
   items: docs
 }]
 
-const test = () =>
+const ProjectManage = () =>
   <div className="documents">
     <div className="docs-titles">進度管理看板</div>
     <div className=" docs-layout">
@@ -79,4 +79,4 @@ const test = () =>
     )}
     </div>
   </div>
-export { test as ProjectManage }
+export default ProjectManage

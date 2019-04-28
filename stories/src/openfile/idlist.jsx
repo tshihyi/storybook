@@ -21,11 +21,11 @@ const read = e => {
 }
 
 
-const test = () =>
+const IDList = () =>
 <div>
   <label for="inputId" className="open-file">開啟檔案</label>
   <input type="text" onInput={it => console.log(it.target.value)} />
   <input id="inputId" type="file" onInput={read}/>
 </div>
 
-export { test as IDList }
+export default IDList

@@ -167,7 +167,7 @@ const EventDetail = ({values}) =>
   </label>
 </div>
 
-const test = () =>
+const Timeline = () =>
   <div id="top" className="timeline topic">
     <a target="_blank" href="http://bit.ly/2H2CZrk">{topic[0].topic}</a>
     <div className="timeline-container">
@@ -182,4 +182,4 @@ const test = () =>
     <div className="gotop"><a href="#top">⬆</a></div>
   </div>
 
-export { test as Timeline }
+export default Timeline

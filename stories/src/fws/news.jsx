@@ -12,7 +12,7 @@ const data = [{
   執行期間將有中斷服務的情況，敬請見諒，謝謝。`
 }]
 
-const test = () =>
+const News = () =>
   <div className = "container">
     <div className = "title">最新公告</div>
     <div className = "news">
@@ -33,4 +33,4 @@ const test = () =>
   </div>
 </div>
 
-export { test as News }
+export default News

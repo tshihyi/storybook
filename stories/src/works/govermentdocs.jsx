@@ -33,7 +33,7 @@ const data = [{
   items: docs
 }]
 
-const test = () =>
+const GovermentDocs = () =>
   <div className="documents">
     <div className=" docs-layout">
     {docs.map(({item, link, image}) =>
@@ -46,4 +46,4 @@ const test = () =>
     )}
     </div>
   </div>
-export { test as GovermentDocs }
+export default GovermentDocs

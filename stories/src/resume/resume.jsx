@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../css/resume.sass'
 
-const test = () =>
+const Resume = () =>
   <div className="layout">
     <div>
       <div className="cv-title">基本資料</div>
@@ -107,4 +107,4 @@ const test = () =>
     </div>
   </div>
 
-export { test as Resume }
+export default Resume

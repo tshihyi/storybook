@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../css/register.sass'
 
-const test = () =>
+const Register = () =>
 <div class="wrapper fadeInDown">
   <div id="formContent">
   <h2 class="active"><a href="#"> 登入 </a></h2>
@@ -21,4 +21,4 @@ const test = () =>
   </div>
 </div>
 
-export { test as Register }
+export default Register

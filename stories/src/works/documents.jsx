@@ -53,7 +53,7 @@ const data = [{
   items: ppts
 }]
 
-const test = () =>
+const Documents = () =>
   <div className="documents">
     <div className="docs-titles">使用者個案文件</div>
     <div className=" docs-layout">
@@ -78,4 +78,4 @@ const test = () =>
     )}
     </div>
   </div>
-export { test as Documents }
+export default Documents

@@ -34,7 +34,7 @@ const data = [{
   image: imgSystemFlowChart
 }]
 
-const test = () =>
+const SystemDesignDocs = () =>
   <div className="documents">
     <div className="docs-titles">API及DB相關文件</div>
     <div className=" docs-layout">
@@ -48,4 +48,4 @@ const test = () =>
     )}
     </div>
   </div>
-export { test as SystemDesignDocs }
+export default SystemDesignDocs
