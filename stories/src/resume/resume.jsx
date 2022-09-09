@@ -1,7 +1,50 @@
 import React from 'react'
 import '../../css/resume.sass'
 
-const Resume = () =>
+const jobs = [{
+  period: "2019/05 - 現在",
+  title: "數據應用工程師(ETL倉儲)",
+  company: "中國信託商業銀行"
+}, {
+  period: "2017/12 - 2019/05",
+  title: "系統分析師(政府資訊系統)",
+  company: "凌誠科技股份有限公司"
+}, {
+  period: "2017/02 - 2017/11",
+  title: "系統分析師(消費型APP)",
+  company: "宣揚電腦有限公司"
+}, {
+  period: "2016/05 - 2017/02",
+  title: "軟體工程師(Java)",
+  company: "慶富造船股份有限公司"
+}, {
+  period: "2012/03 - 2016/05",
+  title: "數位社群分析師",
+  company: "SeeMii韓國服飾"
+}, {
+  period: "2010/02 - 2012/02",
+  title: "網站管理師(MS SQL)",
+  company: "神達電腦股份有限公司"
+}, {
+  period: "2009/02 - 2010/02",
+  title: "專任助理(C++)",
+  company: "國立高雄師範大學"
+}, {
+  period: "2008/02 - 2009/02",
+  title: "MES軟體工程師(C#)",
+  company: "羽冠電腦股份有限公司"
+}]
+
+const Job = ({period, title, company}) => (
+  <>
+    <div className="work-description">
+    <div>{period}</div>
+      {title} {company}
+    </div>
+  </>
+)
+
+const Resume = () => (
   <div className="layout">
     <div>
       <div className="cv-title">基本資料</div>
@@ -10,30 +53,38 @@ const Resume = () =>
         <div>杜詩怡</div>
       </div>
       <div className="info">
-        <div>生日</div>
-        <div>1983/08/11</div>
-      </div>
-      <div className="info">
-        <div>電話</div>
+        <div>📞</div>
         <div>0900-263-385</div>
       </div>
       <div className="info">
-        <div>信箱</div>
+        <div>📧</div>
         <div>tshihyi@gmail.com</div>
+      </div>
+      <div className="info">
+        <div>Github</div>
+        <a href="https://github.com/tshihyi/" target="_blank">
+          <div>https://github.com/tshihyi/</div>
+        </a>
       </div>
       <div>
         <div className="cv-title">履歷彙整</div>
         <div className="timeline-year">
-        <div className="timeline-shape">
-            <div>2016</div>
-            <div>系統</div>
-            <div>分析師</div>
+          <div className="timeline-shape">
+            <div>2019</div>
+            <div>數據</div>
+            <div>應用工程師</div>
             <div>3年</div>
           </div>
           <div className="timeline-shape">
+            <div>2017</div>
+            <div>系統</div>
+            <div>分析師</div>
+            <div>2.5年</div>
+          </div>
+          <div className="timeline-shape">
             <div>2012</div>
-            <div>網站</div>
-            <div>行銷企劃</div>
+            <div>數位</div>
+            <div>社群分析</div>
             <div>4年</div>
           </div>
           <div className="timeline-shape">
@@ -42,69 +93,69 @@ const Resume = () =>
             <div>工程師</div>
             <div>4年</div>
           </div>
-          <div className="timeline-shape">
-            <div>2007</div>
-            <div>碩士畢業</div>
-            <div>資訊教育</div>
-            <div>研究所</div>
-          </div>
         </div>
       </div>
       <div>
         <div className="cv-title">工作技能</div>
         <div className="work-item">
-          <li>客戶訪談及需求收集與分析</li>
-          <li>系統雛型Prototype繪製(Axure RP)</li>
-          <li>資料庫基本設計及語法操作與管理(MS SQL)</li>
-          <li>UML圖型繪製(活動圖、類別圖、流程圖)</li>
-          <li>系統開發、系統設計、系統需求規格文件撰寫</li>
-          <li>政府專案管理經驗(備標、成本評估與分析、期末審查、驗收)</li>
+          <li>Informatica ETL資料入倉規畫、開發與驗證</li>
+          <li>資料導入後資料相依性與正確性驗證</li>
+          <li>倉儲資料自動更新與存留機制設計</li>
+          <li>異質資料庫資料移轉設計與開發</li>
+          <li>業務需求轉SQL邏輯</li>
+          <li>資料探勘及數據貼標</li>
+          <li>IBM TWS批次排程自動化設計</li>
         </div>
       </div>
       <div>
         <div className="cv-title">工作成果</div>
         <div className="work-item">
-          <li>首位規畫手機掃描身分證協助農保職災投保業務成功</li>
-          <li>成功規畫農保職災保費扣款功能上線</li>
-          <li>整合POS消費APP集點/兌點/儲值系統</li>
+          <li>設計30項以上檢核清單確保數據品質減少 5 * 5 工作人日</li>
+          <li>
+            至今彙整資料庫至少300張以上table的Data Inventory文件建立數據血緣
+          </li>
+          <li>整合3種連線環境及git bash至VS Code提升工作效率</li>
+          <li>3種數據資料源ETL彙整入倉流程規畫與開發</li>
+          <li>Hadoop 20億筆歷史資料更新與新增欄位</li>
+          <li>整合6種金融帳戶格式產出對應繳費單據</li>
+          <li>建立資料庫設計流程及規格文件制度</li>
           <li>連續2年度銷售業績成長15%</li>
         </div>
       </div>
-      </div>
+    </div>
     <div>
       <div>
-        <div className="cv-title-right">學歷與工作</div>
-        <div>2017/12 - 現在</div>
-        <div className="work-description">凌誠科技股份有限公司 系統分析師(政府專案)</div>
-        <div>2017/02 - 2017/11</div>
-        <div className="work-description">宣揚電腦有限公司 系統分析師(消費型APP)</div>
-        <div>2016/05 - 2017/02</div>
-        <div className="work-description">慶富造船股份有限公司 軟體工程師(Java)</div>
-        <div>2012/03 - 2016/05</div>
-        <div className="work-description">SeeMii韓國服飾 網路行銷企畫及店長</div>
-        <div>2010/02 - 2012/02</div>
-        <div className="work-description">神達電腦股份有限公司 網站管理師(C#)</div>
-        <div>2009/02 - 2010/02</div>
-        <div className="work-description">國立高雄師範大學 專任助理(C++)</div>
-        <div>2008/02 - 2009/02</div>
-        <div className="work-description">羽冠電腦股份有限公司 軟體工程師(C#)</div>
+        <div className="cv-title-right">工作經歷</div>
+        {jobs.map(({period,title,company}) =>[
+          <div>
+          <div>{period}</div>
+          <div className="work-description">{title} {company}</div>
+          </div>
+        ])}
+
+        <div className="cv-title-right">教育程度</div>
         <div>2005/09 - 2007/06</div>
         <div className="work-description">國立高雄師範大學 資訊教育研究所</div>
         <div>2001/09 - 2005/06</div>
-        <div className="work-description">國立屏東科技大學 資訊管理系(第二名畢業)</div>
+        <div className="work-description">
+          國立屏東科技大學 資訊管理系(第2名畢業)
+        </div>
       </div>
-      <div className="cv-title-right">其他證照</div>
+      <div className="cv-title-right">擅長工具</div>
       <div className="work-item">
-        <li>電腦軟體應用丙級</li>
-        <li>會計事務丙級</li>
-        <li>TOEIC 530</li>
+        <li>Python, SQL, Shell scripts</li>
+        <li>Hadoop, Teradata, Oracle, MS SQL</li>
+        <li>API資料介接</li>
+        <li>Spark資料處理</li>
+        <li>Git command 版控,CI/CD</li>
       </div>
       <div className="cv-title-right">個人特質</div>
       <div className="work-item">
-        <li>注重時間以及工作效率</li>
         <li>喜歡從工作中發現問題並解決問題</li>
+        <li>注重工作細節確保工作成果品質</li>
       </div>
     </div>
   </div>
+)
 
 export default Resume
