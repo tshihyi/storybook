@@ -4,7 +4,7 @@ import '../../css/resume.sass'
 const jobs = [{
   period: "2019/05 - 現在",
   title: "數據應用工程師(ETL倉儲)",
-  company: "中國信託商業銀行"
+  company: "CTBC 中國信託商業銀行"
 }, {
   period: "2017/12 - 2019/05",
   title: "系統分析師(政府資訊系統)",
@@ -24,7 +24,7 @@ const jobs = [{
 }, {
   period: "2010/02 - 2012/02",
   title: "網站管理師(MS SQL)",
-  company: "神達電腦股份有限公司"
+  company: "Mitac 神達電腦股份有限公司"
 }, {
   period: "2009/02 - 2010/02",
   title: "專任助理(C++)",
@@ -35,14 +35,15 @@ const jobs = [{
   company: "羽冠電腦股份有限公司"
 }]
 
-const Job = ({period, title, company}) => (
-  <>
-    <div className="work-description">
-    <div>{period}</div>
-      {title} {company}
-    </div>
-  </>
-)
+const education = [{
+  period: "2005/09 - 2007/06",
+  major: "資訊教育研究所",
+  school: "國立高雄師範大學"
+}, {
+  period: "2001/09 - 2005/06",
+  major: "資訊管理系(第2名畢業)",
+  school: "國立屏東科技大學"
+}]
 
 const Resume = () => (
   <div className="layout">
@@ -111,9 +112,7 @@ const Resume = () => (
         <div className="cv-title">工作成果</div>
         <div className="work-item">
           <li>設計30項以上檢核清單確保數據品質減少 5 * 5 工作人日</li>
-          <li>
-            至今彙整資料庫至少300張以上table的Data Inventory文件建立數據血緣
-          </li>
+          <li>彙整資料庫至少300張以上table的Data Inventory文件建立數據血緣</li>
           <li>整合3種連線環境及git bash至VS Code提升工作效率</li>
           <li>3種數據資料源ETL彙整入倉流程規畫與開發</li>
           <li>Hadoop 20億筆歷史資料更新與新增欄位</li>
@@ -128,18 +127,24 @@ const Resume = () => (
         <div className="cv-title-right">工作經歷</div>
         {jobs.map(({period,title,company}) =>[
           <div>
-          <div>{period}</div>
-          <div className="work-description">{title} {company}</div>
+          <div className="period">{period}</div>
+            <div className="job">
+            <div className="job-title">{title} </div>
+            <div className="comany-name">{company}</div>
+            </div>
           </div>
         ])}
 
         <div className="cv-title-right">教育程度</div>
-        <div>2005/09 - 2007/06</div>
-        <div className="work-description">國立高雄師範大學 資訊教育研究所</div>
-        <div>2001/09 - 2005/06</div>
-        <div className="work-description">
-          國立屏東科技大學 資訊管理系(第2名畢業)
-        </div>
+        {education.map(({period,school,major}) =>[
+          <div>
+          <div className="period">{period}</div>
+          <div className = "education">
+            <div className="major">{major}</div>
+            <div className="school">{school}</div>
+          </div>
+          </div>
+        ])}
       </div>
       <div className="cv-title-right">擅長工具</div>
       <div className="work-item">
