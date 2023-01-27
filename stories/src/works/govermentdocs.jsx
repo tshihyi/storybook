@@ -19,7 +19,7 @@ const docs = [{
   link: 'https://drive.google.com/open?id=1Guib1-lUtt479Qfflp7bqRs21F4Jnh0T',
   image: imgSD
 }, {
-  item: '4-需求規格書',
+  item: '4-需求規格書',
   link: 'https://drive.google.com/open?id=1HX2fkADy6hyMLR7fEWzK7cZ7n5sIJozc',
   image: imgRFP
 }, {

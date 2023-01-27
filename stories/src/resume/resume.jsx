@@ -67,6 +67,12 @@ const Resume = () => (
           <div>https://github.com/tshihyi/</div>
         </a>
       </div>
+      <div className="info">
+        <div>Medium</div>
+        <a href="https://medium.com/@tshihyi" target="_blank">
+          <div>https://medium.com/@tshihyi</div>
+        </a>
+      </div>
       <div>
         <div className="cv-title">履歷彙整</div>
         <div className="timeline-year">

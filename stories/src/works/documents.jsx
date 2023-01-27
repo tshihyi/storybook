@@ -8,6 +8,7 @@ import imgEducationPPT from '../../img/10-education-sys-operation.png'
 import imgE2ETestingPPT from '../../img/11-e2e-automatic-testing.png'
 import imgAppFunctionPPT from '../../img/12-member-app.png'
 import imgAppAnalyzePPT from '../../img/13-member-product-analyze.png'
+import imgDataAnalyzePPT from '../../img/33-data-analysis-python.png'
 
 const specs = [{
   item: '1-1-福利-職保批次投保',
@@ -28,13 +29,17 @@ const specs = [{
 }]
 
 const ppts =  [{
-  item: '1-1-App-產品功能介紹',
-  link: 'https://drive.google.com/open?id=13gsullBIDAzyPRVWidosCju8P3UuqDF0',
-  image: imgAppFunctionPPT
-}, {
+  item: '1-1-Spark資料分析與API設計簡報',
+  link: 'https://docs.google.com/presentation/d/1o3BgPzUxhK8XVZSBxsdXNRZGOhqbBCP-v7iMxsp6Kcs/edit#slide=id.p',
+  image: imgDataAnalyzePPT
+},{
   item: '1-2-App-競品分析簡報',
   link: 'https://drive.google.com/open?id=1qlhx4x_BsN6bdNPmzWLmkoySO4NM6XhM',
   image: imgAppAnalyzePPT
+}, {
+  item: '1-3-App-產品功能介紹',
+  link: 'https://drive.google.com/open?id=13gsullBIDAzyPRVWidosCju8P3UuqDF0',
+  image: imgAppFunctionPPT
 }, {
   item: '1-3-福利-保費功能教育訓練',
   link: 'https://drive.google.com/file/d/1wNyg6lT426ObSSoeSqjlh5QcAiUx9b0c/view?usp=sharing',
@@ -55,9 +60,9 @@ const data = [{
 
 const Documents = () =>
   <div className="documents">
-    <div className="docs-titles">使用者個案文件</div>
-    <div className=" docs-layout">
-    {specs.map(({item, link, image}) =>
+    <div className="docs-titles">投影片簡報文件</div>
+    <div className="docs-layout ">
+    {ppts.map(({item, link,image}) =>
       <div>
         <a href={link} target="_blank">
           <img src={image} />
@@ -66,9 +71,9 @@ const Documents = () =>
       </div>
     )}
     </div>
-    <div className="docs-titles">投影片簡報文件</div>
-    <div className="docs-layout ">
-    {ppts.map(({item, link,image}) =>
+    <div className="docs-titles">使用者個案文件</div>
+    <div className=" docs-layout">
+    {specs.map(({item, link, image}) =>
       <div>
         <a href={link} target="_blank">
           <img src={image} />
